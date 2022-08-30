@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Mentoria online</title>
+</head>
+<body>
+    <div class="page">
+        <header>
+           <h1>Mentoria</h1>
+           <p>Preencha o formulário abaixo para <br>
+            agenda a sua mentoria.
+            </p>
+        </header>
+        <form id="my-form">
+            <fieldset>
+                <legend>Informações do Evento</legend>
+                <div class="fieldset-wrap">
+                    <div class="col-4">
+                        <div class="input-content">
+                            <label for="fname">Name</label>
+                            <input type="text" id="fname" required>
+                        </div>
+                        <div class="input-content">
+                            <label for="lname">Last name</label>
+                            <input type="text" id="lname" required>
+                        </div>
+                    </div>
+                    <div class="input-content">
+                        <label for="email">E-mail <span>(enter a valid email)</span></label>
+                        <input type="email" id="email">
+                    </div>
+                    <div class="input-content">
+                        <label for="password">Password <span>(minimum 8 characters)</span></label>
+                        <input type="password" id="password" required>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Mentor Information</legend>
+                    <div class="input-content">
+                        <label for="mentor">Name of your mentor</label>
+                        <input type="text" id="mentor">
+                    </div>
+            </fieldset>
+            <fieldset>
+                <legend>Your Available Times</legend>
+                <h3>First Mentorship</h3>
+                    <div class="col-3">
+                        <div class="input-content">
+                            <label for="Date">Date <span>(DD/MM/AAAA)</span></label>
+                            <input type="date" id="date">
+                        </div>
+                        <div class="input-content">
+                            <label for="Start"> Start</label>
+                            <input type="time" id="start">
+                        </div>
+                        <div class="input-content">
+                            <label for="the-end"> The end</label>
+                            <input type="time" id="the-end">
+                        </div>
+                    </div>
+                    <h3>First Mentorship</h3>
+                    <div class="col-3">
+                        <div class="input-content">
+                            <label for="Date">Date <span>(DD/MM/AAAA)</span></label>
+                            <input type="date" id="date">
+                        </div>
+                        <div class="input-content">
+                            <label for="Start"> Start</label>
+                            <input type="time" id="start">
+                        </div>
+                        <div class="input-content">
+                            <label for="the-end"> The end</label>
+                            <input type="time" id="the-end">
+                        </div>
+                    </div>
+            </fieldset>
+        </form>
+        <footer>
+                <input class="button" 
+                type="submit" 
+                value="Save" 
+                required
+                form="my-form">
+        </footer>
+    </div>
+</body>
+</html>
